@@ -1,49 +1,89 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
     background-color: #FFD4BC;
-}
-* {
-    font-family: "Arial", tahoma;
-}
-
-.button {
-    background-color: #EDEAE5;
-    border-style: solid;
-    border-color: #EDEAE5;
-    border-radius: 65px;
-    color: black;
-    padding: 15px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition: 0.3s;
-    cursor: pointer;
-    font-family: 'Baloo Bhaina';
+    overflow: hidden;
+    font-family: 'Baloo Bhanina';
   }
-  .button:hover {
-    background-color: #c7c7c7;
-    border-color: #c7c7c7;
-}
-.container {
-    padding: 100px 25%;
+
+  .logo-container {
+    font-family: 'Baloo Bhanina';
     display: flex;
     flex-direction: column;
-    line-height: 2rem;
-    font-size: 1.2em;
-    color: #202C39;
     align-items: center;
     justify-content: center;
-}
-#searchbar {
-    margin: auto;
-    padding: 15px 165px;
-    width: 350px;
-    border-color: #9A031E;
+    height: 100%;
+  }
+
+  input { 
+    background-image: url("search.png");
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Baloo Bhaina';
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    font-family: 'Baloo Bhanina';
+  }
+  
+  .title {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Baloo Bhaina';
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Baloo Bhanina';
+  }
+  
+  .search-bar {
+    width: 400px;
+    padding: 10px;
     border-style: solid;
-}
-input[type=text] {
-    -webkit-transition: width 0.15s ease-in-out;
-    transition: width 0.15s ease-in-out;
-}
+    border-color: #9A031E;
+    border-width: 1px;
+    border-radius: 65px;
+    font-size: 16px;
+    font-family: 'Baloo Bhaina';
+  }
+  
+  .generate-btn {
+    padding: 10px;
+    background-color: #EDEAE5;
+    color: black;
+    border: solid;
+    border-color: #9A031E;
+    border-radius: 65px;
+    border-width: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Baloo Bhaina';
+    margin-left: 10px;
+    transition: 0.2s;
+  }
+
+  .generate-btn:hover {
+    background-color: #979797;
+  }
+
+  .generate-btn:active {
+    background-color: white;
+  }
