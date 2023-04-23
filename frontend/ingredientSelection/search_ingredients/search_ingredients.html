@@ -6,17 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="filters.css" rel="stylesheet" type="text/css" />
     <script src="/filters.js" defer></script>
-    <title>Searchbar</title>
+    <title>Yum-Eat</title>
     <link rel="stylesheet" href="search_ingredients.css">
     <link href='https://fonts.googleapis.com/css?family=Baloo Bhaina' rel='stylesheet'>
 </head>
 <body>
-    <div class ="container">
-        <h2>Search </h2>
-        <div class="input">
-            <input id="searchbar" autocomplete="off" onkeyup="search()" type="text"\n name="search" placeholder="Enter Ingredients">
-        <button class="button">Generate</button>
+    <div class="logo-container">
+        <image src="Yum-Eat.png"></image>
+        <div class="search-container">
+            <h1 class="title">What can I make with <span class = "auto-type">?</span></h1>
+            <div class="search-box">
+            <input type="text" placeholder="What ingredients do you have?" class="search-bar" autofocus/>
+            <button class="generate-btn" type="submit">Generate</button>
+            </div>
+        </div>
+        <div class="footer-container">
+            <text>A site made by Kelly, Jason, Eugene, James, William, Travis, Rachel, Braden, and Heon.</text>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["spaghetti, eggs, and heavy cream?", "butter, sugar, and flour?", "bread, butter, and cheese?"],
+            typeSpeed: 25,
+            backSpeed: 25,
+            loop: true
+        })
+    </script>
 </body>
 </html>
