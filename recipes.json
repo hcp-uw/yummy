@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Fried Rice",
+        "ingredients": ["Peas", "Rice", "Soy Sauce", "Egg", "Salt", "Spam", "Sesame Oil"],
+        "prep_time": 10,
+        "servings": 2,
+        "cook_time": 10,
+        "cuisine": "Chinese",
+        "link": "rice.com"
+    },
+    {
+        "name": "Orange Chicken",
+        "ingredients": ["Chicken", "Egg", "Cornstarch", "Flour", "Salt", "Oil", "Orange Juice", "Sugar", "Rice Vinegar", "Soy Sauce", "Ginger", "Garlic Powder", "Red Chili Flakes"],
+        "prep_time": 15,
+        "servings": 23,
+        "cook_time": 20,
+        "cuisine": "Chinese",
+        "link": "https://www.modernhoney.com/chinese-orange-chicken/"
+    }
+]
