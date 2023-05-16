@@ -6,7 +6,8 @@
         "servings": 2,
         "cook_time": 10,
         "cuisine": "Chinese",
-        "link": "rice.com"
+        "link": "rice.com",
+        "ingredient_string": "Egg, Peas, Rice, Salt, Sesame_Oil, Soy_Sauce, Spam,"
     },
     {
         "name": "Orange Chicken",
@@ -15,6 +16,7 @@
         "servings": 23,
         "cook_time": 20,
         "cuisine": "Chinese",
-        "link": "https://www.modernhoney.com/chinese-orange-chicken/"
+        "link": "https://www.modernhoney.com/chinese-orange-chicken/",
+        "ingredient_string": "Chicken, Cornstarch, Egg, Flour, Garlic_Powder, Ginger, Oil, Orange_Juice, Red_Chili_Flakes, Rice_Vinegar, Salt, Sugar,"
     }
 ]
