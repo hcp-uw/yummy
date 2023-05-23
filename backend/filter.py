@@ -18,7 +18,7 @@ def filter(categories: []): # how are we expecting inputs to be recieved - right
     cursor = conn.cursor()
     
     # constructing query
-    query = "SELECT TOP 100 * FROM \"Recipes\" WHERE " # limiting to top 100 results
+    query = "SELECT TOP 100 name, link FROM \"Recipes\" WHERE " # limiting to top 100 results
     if len(categories) > 1:
         for i in range(len(categories) - 1):
             query += categories[i][0].lower() + " = '" + str(categories[i][1]) + "' AND "
