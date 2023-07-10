@@ -10,7 +10,6 @@ function App() {
       <Layout>
 
       </Layout>
-      <RecipeDisplay />
     </div>
   );
 }
