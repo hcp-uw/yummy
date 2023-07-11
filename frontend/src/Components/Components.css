@@ -1,0 +1,23 @@
+.General-card{
+    width: 400px; /* Adjust the width as per your requirements */
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 5%; /* Set the left margin to create space between the box and the navigation bar */
+    background-color: #f1f1f1; /* Set the background color for the box */
+    padding: 20px; /* Set padding to create spacing within the box */
+    border: 1px solid #ccc; /* Add a border to the box */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    width: 80%;
+    height: 300px;
+    padding-top: 0px;
+}
+
+.Recipes-title{
+    margin-left: 5%;
+    background-color: aqua;
+    text-align: left;
+}
+
+.h2{
+    margin-top: 0px;
+}

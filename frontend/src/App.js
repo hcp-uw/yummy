@@ -1,5 +1,7 @@
+import React from 'react';
 import './App.css';
 import Layout from './Components/Layout';
+import RecipeDisplay from './Components/RecipeDisplay';
 
 // recipe display page
 function App() {
@@ -8,7 +10,6 @@ function App() {
       <Layout>
 
       </Layout>
-      <p>hi this is the recipe display side</p>
     </div>
   );
 }

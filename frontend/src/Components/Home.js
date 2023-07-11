@@ -16,7 +16,7 @@ const Nav = styled.nav`
 const Home = () => {
     return (
         <div>
-            <Nav><p>This is home page</p></Nav>
+            <Nav><p></p></Nav>
         </div>
     );
 };
