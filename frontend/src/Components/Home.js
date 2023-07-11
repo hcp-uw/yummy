@@ -9,13 +9,14 @@ const Nav = styled.nav`
         height: 100%;
         overflow-y: scroll;
         background-color: #FFD4BC;
+        padding-left: 10%;
     }
 `;
 
 const Home = () => {
     return (
         <div>
-            <p>This is home page</p>
+            <Nav><p>This is home page</p></Nav>
         </div>
     );
 };

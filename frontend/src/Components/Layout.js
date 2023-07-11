@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import SearchBar from './SearchBar';
 import styled from 'styled-components';
 import RecipeDisplay from './RecipeDisplay';
+import Home from './Home';
 // component styles
 const Wrapper = styled.div`
     @media (min-width: 700px) {
@@ -31,10 +32,11 @@ const Layout = ({ children }) => {
     return (
     <React.Fragment>
         <Wrapper>
+            <Main>{children}</Main>
+            <Home/>
             <SearchBar/>
             <Navigation />
             <Main>{ children } <RecipeDisplay></RecipeDisplay></Main>
-            
         </Wrapper>
     </React.Fragment>
     );
