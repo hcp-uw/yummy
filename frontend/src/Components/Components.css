@@ -1,23 +1,45 @@
-.General-card{
-    width: 400px; /* Adjust the width as per your requirements */
+/* Recipe Card */
+.General-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: left;
-    margin-top: 0px;
-    margin-left: 5%; /* Set the left margin to create space between the box and the navigation bar */
-    background-color: #f1f1f1; /* Set the background color for the box */
-    padding: 20px; /* Set padding to create spacing within the box */
-    border: 1px solid #ccc; /* Add a border to the box */
-    box-sizing: border-box; /* Include padding and border in the total width */
-    width: 80%;
-    height: 300px;
-    padding-top: 0px;
-}
-
-.Recipes-title{
+    margin-bottom: 20px;
     margin-left: 5%;
-    background-color: aqua;
-    text-align: left;
+}
+  
+.General-card h2 {
+color: #333333;
+font-size: 24px;
+margin-bottom: 10px;
+margin-top: 10px;
 }
 
-.h2{
-    margin-top: 0px;
+.General-card p {
+color: #666666;
+font-size: 16px;
+margin-bottom: 5px;
+}
+
+.General-card a {
+color: #4285f4;
+font-size: 16px;
+text-decoration: none;
+}
+
+.General-card a:hover {
+text-decoration: underline;
+}
+
+/* Recipe Header */
+.Recipe-list-header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.Recipe-list-header h1 {
+font-size: 28px;
+color: #333333;
+margin-bottom: 10px;
 }

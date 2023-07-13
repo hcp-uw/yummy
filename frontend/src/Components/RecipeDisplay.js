@@ -8,7 +8,9 @@ function RecipeDisplay() {
 
     return (
         <div>
-            <h1 className="Recipes-title">Recipes Area</h1>
+            <div className="Recipe-list-header">
+                <h1>Recipes</h1>
+            </div>
             {Recipes.map((recipe) => (
             <div key={recipe.id}>
                 <RecipeCard recipe = { recipe } />
