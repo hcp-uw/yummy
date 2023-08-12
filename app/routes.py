@@ -1,21 +1,25 @@
-from flask import render_template
+from flask import render_template, jsonify
 from app import app
+import json
 
+num = 0
 
 @app.route('/')
 def home():
     return "This is the home!"
-@app.route('/index')
+
+@app.route('/getRecipes/', methods=['GET'])
 def index():
-    user = {'username': 'Miguel'}
-    posts = [
-        {
-            'author': {'username': 'John'},
-            'body': 'Beautiful day in Portland!'
-        },
-        {
-            'author': {'username': 'Susan'},
-            'body': 'The Avengers movie was so cool!'
-        }
-    ]
-    return render_template('index.html', title='Home', user=user, posts=posts)
+    global num
+    recipes = {
+        "name": f"Recipe {num}",
+        "ingredients": "",
+        "prep_time": num,
+        "servings": num,
+        "cook_time": num,
+        "cuisine": "cuisine",
+        "link": "",
+        "ingredient_string": ""
+    }
+    num += 1
+    return jsonify(recipes)

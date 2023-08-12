@@ -12,7 +12,6 @@ const servingOptions = [
   {label: "Two", value: "two"}
 ]
 
-
 // recipe display page
 function App() {
   const [prepTime, setPrepTime] = useState(false);
@@ -24,6 +23,8 @@ function App() {
 
   const [totalMinutes, setTotalMinutes] = useState(1);
   const [prepMinutes, setPrepMinutes] = useState(1);
+
+  const [recipes, setRecipes] = useState('')
 
   const handleTotalClick = () => {
     setTotalTime(!totalTime);
@@ -39,6 +40,30 @@ function App() {
 
   const handlePrepClick = () => {
     setPrepTime(!prepTime);
+  }
+
+  const handleFetchRecipes = async () => {
+    try {
+      const response = await fetch('http://127.0.0.1:5000/getRecipes/', {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+      
+      console.log(response)
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
+  
+      const recipes = await response.json();
+  
+      console.log('result is: ', JSON.stringify(recipes));
+  
+      setRecipes(JSON.stringify(recipes))
+    } catch (err) {
+      console.log(err)
+    } 
   }
 
   return (
@@ -87,6 +112,10 @@ function App() {
             <p>Prep time: {prepMinutes} minutes</p>
             </div>
           )}
+          <div>
+            <button type="button" onClick={handleFetchRecipes}>Fetch from Flask Api</button>
+            <p>Recipes: {recipes}</p>
+          </div>
         </div>
       </Layout>
   );
