@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Layout from './Components/Layout';
-<<<<<<< HEAD
-=======
+// <<<<<<< HEAD
+// =======
 
 const cuisineOptions = [
   {label: "Chinese", value: "chinese"}, 
@@ -14,7 +14,7 @@ const servingOptions = [
   {label: "Two", value: "two"}
 ]
 
->>>>>>> 31979156080ad4e01bf6978eda63210421ae4004
+// >>>>>>> 31979156080ad4e01bf6978eda63210421ae4004
 
 // recipe display page
 function App() {

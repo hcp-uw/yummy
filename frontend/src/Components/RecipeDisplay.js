@@ -7,7 +7,7 @@ import './Components.css'
 function RecipeDisplay() {
 
     return (
-        <div>
+        <div className="Recipe-Display">
             <div className="Recipe-list-header">
                 <h1>Recipes</h1>
             </div>

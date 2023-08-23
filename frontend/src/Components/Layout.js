@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
             <Home/>
             <SearchBar/>
             <Navigation />
-            <Main>{ children } <RecipeDisplay></RecipeDisplay></Main>
+            <RecipeDisplay />
         </Wrapper>
     </React.Fragment>
     );
